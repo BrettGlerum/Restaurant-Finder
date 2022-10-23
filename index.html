@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Finder</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant Finder</h1>
+    </header>
+
+    <main>
+        <!-- All of the user input elements -->
+        <div class="user-input-container center">
+            <h2>Enter location: </h2>
+            <div class="location-container">
+                <input id="location" type="text" placeholder="Enter city or zipcode">
+            </div>
+
+            <h2>Choose price range: </h2>
+            <!-- span will show current value of the slider -->
+            <span id="price-slider-value">*current value*</span>
+            <div class="price-container">
+                $5<input id="price-slider" type="range" min="5" max="200" value="5">$200
+            </div>
+
+            <h2>Choose distance away: </h2>
+            <!-- span will show current value of the slider -->
+            <span id="distance-slider-value">*current value*</span>
+            <div class="distance-container">            
+                5 mi<input id="distance-slider" type="range" min="5" max="25" value="5">25 mi
+            </div>
+
+            <button id="top3-btn">Show Top 3</button>
+            <button id="randomize-btn">Show Random 3</button>
+        </div>
+    </main>
+
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
