@@ -1,3 +1,6 @@
+final_selection = [];
+
+
 const options = {
         method: 'GET',
         headers: {
@@ -5,7 +8,12 @@ const options = {
             'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
         }
     };
-    fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/' + state +'/city/' + city +'/10, options')
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
+    fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/' + state + '/city/' + city +'/'+ number +', options')
+        .then(function (response) {
+            response.json().then(function (data){
+                localStorage.setItem("restaurants", JSON.stringify(data));
+               restaurant_options = JSON.parse(localStorage.getItem("restaurants"));
+               final_selection = restaurant_options.restaurants
+                console.log(final_selection)
+            })
+        })
