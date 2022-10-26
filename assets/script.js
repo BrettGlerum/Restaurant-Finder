@@ -1,5 +1,5 @@
 var state = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
-var city = [];
+var city = ['Austin'];
 var final_selection = [];
 
 const options = {
@@ -9,7 +9,7 @@ const options = {
 		'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
 	}
 };
-    fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/' + state + '/city/' + city +'/'+ number +', options')
+    fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/' + state[42] + '/city/' + city[0] +'/3', options)
         .then(function (response) {
             response.json().then(function (data){
                 localStorage.setItem("restaurants", JSON.stringify(data));
@@ -17,4 +17,4 @@ const options = {
                final_selection = restaurant_options.restaurants
                 console.log(final_selection)
             })
-        })
+        }); 
