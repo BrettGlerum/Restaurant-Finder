@@ -5,7 +5,7 @@ var final_selection = [];
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '9ad2c9e39amsh2925cb2352495d2p199454jsn339b5dbb49f4',
+		'X-RapidAPI-Key': '13f2487b8amsh5738b35d7cb5e02p1304a9jsnb71d336b3673',
 		'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
 	}
 };
