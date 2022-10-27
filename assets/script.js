@@ -24,3 +24,18 @@ console.log(final_selection)
 
 names = final_selection[0].restaurantName;
 hours = final_selection[0].intervalHours;
+
+
+// Functions for sliders to show value
+var priceSlider = document.getElementById("price-slider")
+
+function showPrice(priceSlider) {
+    document.getElementById("price-slider-value").innerHTML = "$" + priceSlider
+}
+
+var distanceSlider = document.getElementById("distance-slider")
+
+function showDistance(distanceSlider) {
+    document.getElementById("distance-slider-value").innerHTML = distanceSlider + " mi"
+}
+
