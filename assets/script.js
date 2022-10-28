@@ -32,13 +32,22 @@ for (i = 0; i < 3; i++){
 }
 
 
-// Functions for sliders to show current value
+// Function for price slider to show current set price level btwn 1-4
 var priceSlider = document.getElementById("price-slider")
 
 function showPrice(priceSlider) {
-    document.getElementById("price-slider-value").innerHTML = "$" + priceSlider
+    if (priceSlider == 1) {
+        document.getElementById("price-slider-value").innerHTML = "$" 
+    } else if (priceSlider == 2) {
+        document.getElementById("price-slider-value").innerHTML = "$$" 
+    } else if (priceSlider == 3) {
+        document.getElementById("price-slider-value").innerHTML = "$$$" 
+    } else if (priceSlider == 4) {
+        document.getElementById("price-slider-value").innerHTML = "$$$$" 
+    }
 }
 
+// Function for distance slider to show current set distance. Goes by increments of 2 mi
 var distanceSlider = document.getElementById("distance-slider")
 
 function showDistance(distanceSlider) {
