@@ -19,7 +19,7 @@
             <p class="text-2xl font-normal text-black p-8 text-center" id="saved-restaurants">Saved Restaurants</p>
         </div>
 
-        <!-- All of the user input elements -->
+        <!-- User input for location -->
         <div class="text-2xl">
             <div class="user-input-container center">
                 <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
@@ -29,24 +29,25 @@
                 </div>
         </div>
 
+        <!-- User input for price level -->
         <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
             <h2 class="text-4xl font-medium">Choose price level: </h2>
-            <!-- span will show current value of the slider -->
             <span id="price-slider-value" class="text-3xl font-light">$</span>
             <div class="price-container">
-                Level 1<input id="price-slider" type="range" min="5" max="200" value="5" onchange="showPrice(this.value)">Level 4
+                Level 1<input id="price-slider" type="range" min="1" max="4" value="1" onchange="showPrice(this.value)">Level 4
             </div>
         </div>
 
+        <!-- User input for distance away -->
         <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
             <h2 class="text-4xl font-medium">Choose distance away:</h2>
-            <!-- span will show current value of the slider -->
-            <span id="distance-slider-value" class="text-3xl font-light">5 mi</span>
+            <span id="distance-slider-value" class="text-3xl font-light">2 mi</span>
             <div class="distance-container">            
-                2 mi<input id="distance-slider" type="range" min="5" max="25" value="2" onchange="showDistance(this.value)">24 mi
+                2 mi<input id="distance-slider" type="range" min="2" max="24" value="2" step="2" onchange="showDistance(this.value)">24 mi
             </div>
         </div>
 
+        <!-- Buttons to choose top 3 or random 3 -->
         <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
             <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="btn top3-btn"> <a href="./ResultsPage.html">Show Top 3</a> </button>
             <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="btn randomize-btn"> <a href="./ResultsPage.html">Show Random 3</a> </button>
