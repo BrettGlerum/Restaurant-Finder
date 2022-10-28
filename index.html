@@ -30,11 +30,11 @@
         </div>
 
         <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
-            <h2 class="text-4xl font-medium">Choose price range: </h2>
+            <h2 class="text-4xl font-medium">Choose price level: </h2>
             <!-- span will show current value of the slider -->
-            <span id="price-slider-value" class="text-3xl font-light">$5</span>
+            <span id="price-slider-value" class="text-3xl font-light">$</span>
             <div class="price-container">
-                $5<input id="price-slider" type="range" min="5" max="200" value="5" onchange="showPrice(this.value)">$200
+                Level 1<input id="price-slider" type="range" min="5" max="200" value="5" onchange="showPrice(this.value)">Level 4
             </div>
         </div>
 
@@ -43,7 +43,7 @@
             <!-- span will show current value of the slider -->
             <span id="distance-slider-value" class="text-3xl font-light">5 mi</span>
             <div class="distance-container">            
-                5 mi<input id="distance-slider" type="range" min="5" max="25" value="5" onchange="showDistance(this.value)">25 mi
+                2 mi<input id="distance-slider" type="range" min="5" max="25" value="2" onchange="showDistance(this.value)">24 mi
             </div>
         </div>
 
