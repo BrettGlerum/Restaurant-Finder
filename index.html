@@ -34,7 +34,7 @@
             <!-- span will show current value of the slider -->
             <span id="price-slider-value" class="text-3xl font-light">*current value*</span>
             <div class="price-container">
-                $5<input id="price-slider" type="range" min="5" max="200" value="5">$200
+                $5<input id="price-slider" type="range" min="5" max="200" value="5" onchange="showPrice(this.value)">$200
             </div>
         </div>
 
@@ -43,7 +43,7 @@
             <!-- span will show current value of the slider -->
             <span id="distance-slider-value" class="text-3xl font-light">*current value*</span>
             <div class="distance-container">            
-                5 mi<input id="distance-slider" type="range" min="5" max="25" value="5">25 mi
+                5 mi<input id="distance-slider" type="range" min="5" max="25" value="5" onchange="showDistance(this.value)">25 mi
             </div>
         </div>
 
