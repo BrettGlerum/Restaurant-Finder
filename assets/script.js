@@ -32,7 +32,7 @@ for (i = 0; i < 3; i++){
 }
 
 
-// Function for price slider to show current set price level btwn 1-4
+// Function for price slider. Sets price level btwn 1-4
 var priceSlider = document.getElementById("price-slider")
 
 function showPrice(priceSlider) {
@@ -47,9 +47,10 @@ function showPrice(priceSlider) {
     }
 }
 
-// Function for distance slider to show current set distance. Goes by increments of 2 mi
+// Function for distance slider to set distance btwn 2mi-24mi. Goes by increments of 2
 var distanceSlider = document.getElementById("distance-slider")
 
 function showDistance(distanceSlider) {
     document.getElementById("distance-slider-value").innerHTML = distanceSlider + " mi"
 }
+
