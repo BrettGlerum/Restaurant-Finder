@@ -1,7 +1,7 @@
 var state = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 var city = ['Austin']
 var restultsEl = document.querySelectorAll(".result-item")
-var number1 = Math.floor(Math.random() * 150) + 1;
+var number1 = Math.floor(Math.random() * 150);
 
 
 var names = [];
@@ -25,7 +25,8 @@ const options = {
 final_selection = restaurant_options.restaurants
 console.log(final_selection)
 for (i = 0; i < 3; i++){
-    var number2 = Math.floor(Math.random() * 10) + 1;
+    var number2 = Math.floor(Math.random() * 10);
+    console.log(number2)
     restultsEl[i].textContent = final_selection[number2].restaurantName;
     console.log(final_selection[number2].restaurantName)
 }
