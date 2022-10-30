@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results Page</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>Restaurant Finder Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type= "module" src="./assets/google.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
 </head>
-
-<body>
     <!-- Map -->
-    <div class="map border">
+    <main>
+    <div id="map">
         *Map goes here*
     </div>
     <div>
@@ -28,14 +31,15 @@
             <li class="result-item"> *Restaurant 3*</li>
         </ol>
     </div>
-
     <!-- Buttons to save results and go back to home -->
     <div class="go-back">
         <button id="btn save-results-btn">Save Results</button>
         <button id="btn go-back-btn">Go Back</button>
     </div>
-    
-    <script src="./assets/script.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNvoG9mf_ZuEflZNJ02w5dYJWmX03DlG8&libraries=places&callback=initMap&v=weekly"
+    defer
+  ></script>
 </body>
 
 </html>
