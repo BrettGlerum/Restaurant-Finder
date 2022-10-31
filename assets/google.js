@@ -85,7 +85,7 @@ function callback(results, status)  {
   function initMap2() {
     var Results = JSON.parse(localStorage.getItem("results"));
    const map= new google.maps.Map(
-        document.getElementById('map2'), {center: locations, zoom: 15});
+        document.getElementById('map'), {center: locations, zoom: 15});
     const directionsService = new google.maps.DirectionsService();
     const directionsRenderer = new google.maps.DirectionsRenderer({
       draggable: true,
