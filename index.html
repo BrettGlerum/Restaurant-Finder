@@ -8,15 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-red-50 mx-w-md mx-auto">
-    <header>
-        <h1 class="text-7xl font-bold text-center p-10 text-white bg-red-900">Restaurant Finder</h1>
-    </header>
+<body class="mx-w-md mx-auto">
 
-    <main class="px-8 grid justify-items-center">
+    <header>
+        <h1 class="text-7xl font-bold text-center p-10 text-white bg-red-900">Restaurant Finder 🍽️</h1>
+    </header>
+  
+    <main class="px-8 grid justify-items-center bg-cover bg-left-bottom"
+    style="background-image: url('./image/restaurant-bg.jpg') ;">
+
         <!-- Clicking on this will show list of saved restaurants -->
         <div>
-            <p class="text-2xl font-normal text-black p-8 text-center" id="saved-restaurants">Saved Restaurants</p>
+            <p class="bg-slate-500 rounded-md p-7 m-3 text-4xl font-medium text-black text-center" id="saved-restaurants">Saved Restaurants</p>
         </div>
 
         <!-- User input for location -->
@@ -25,14 +28,14 @@
                 <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
                     <h2 class="text-4xl font-medium">Enter location:</h2>
                         <div class="location-container p-4">
-                        <input class="rounded-md text-center hover:shadow-lg" id="location" type="text" placeholder="Enter city or zipcode">
+                        <input class="rounded-md text-center p-2 hover:outline outline-offset-1 outline-red-50 ..." id="location" type="text" placeholder="Enter city or zipcode">
+                        </div>
                 </div>
-        </div>
-
+            </div>
         <!-- User input for price level -->
         <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
             <h2 class="text-4xl font-medium">Choose price level: </h2>
-            <span id="price-slider-value" class="text-3xl font-light">$</span>
+            <span id="price-slider-value" class="text-3xl font-normal">$</span>
             <div class="price-container">
                 Level 1<input id="price-slider" type="range" min="1" max="4" value="1" onchange="showPrice(this.value)">Level 4
             </div>
@@ -41,7 +44,7 @@
         <!-- User input for distance away -->
         <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
             <h2 class="text-4xl font-medium">Choose distance away:</h2>
-            <span id="distance-slider-value" class="text-3xl font-light">2 mi</span>
+            <span id="distance-slider-value" class="text-3xl font-normal">2 mi</span>
             <div class="distance-container">            
                 2 mi<input id="distance-slider" type="range" min="2" max="24" value="2" step="2" onchange="showDistance(this.value)">24 mi
             </div>
@@ -52,11 +55,14 @@
             <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="top3-btn"> <a href="./ResultsPage.html">Show Top 3</a> </button>
             <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="randomize-btn"> <a href="./ResultsPage.html">Show Random 3</a> </button>
         </div>
+            
+        </div>
 
-    </div>
-    </div>
+        <footer class="bg-red-900 text-white text-center p-2 m-2 rounded-lg w-full ...">
+        <p>Made by The Indecisives</p>
+        </footer>
+
     </main>
-
 
     <script src="./assets/script.js"></script>
 </body>
