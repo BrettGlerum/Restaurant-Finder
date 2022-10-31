@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Finder</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+    <script type="module"src="./assets/google.js"></script>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
+<<<<<<< HEAD
 <body class="mx-w-md mx-auto">
 
     <header>
@@ -16,8 +22,15 @@
   
     <main class="px-8 grid justify-items-center bg-cover bg-left-bottom"
     style="background-image: url('./image/restaurant-bg.jpg') ;">
+=======
+<body class="bg-red-50 mx-w-md mx-auto" >
+    <header>
+        <h1 class="text-7xl font-bold text-center p-10 text-white bg-red-900">Restaurant Finder</h1>
+    </header>
+>>>>>>> ede130c58ff4c40f06961a953ae0a517dee1c4d1
 
         <!-- Clicking on this will show list of saved restaurants -->
+        
         <div>
             <p class="bg-slate-500 rounded-md p-7 m-3 text-4xl font-medium text-black text-center" id="saved-restaurants">Saved Restaurants</p>
         </div>
@@ -28,8 +41,13 @@
                 <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
                     <h2 class="text-4xl font-medium">Enter location:</h2>
                         <div class="location-container p-4">
+<<<<<<< HEAD
                         <input class="rounded-md text-center p-2 hover:outline outline-offset-1 outline-red-50 ..." id="location" type="text" placeholder="Enter city or zipcode">
                         </div>
+=======
+                        <input class="rounded-md text-center hover:shadow-lg" id="address" type="textbox" placeholder="Enter city or zipcode">
+                        <input type="button" value="Encode">
+>>>>>>> ede130c58ff4c40f06961a953ae0a517dee1c4d1
                 </div>
             </div>
         <!-- User input for price level -->
@@ -62,9 +80,22 @@
         <p>Made by The Indecisives</p>
         </footer>
 
+<<<<<<< HEAD
     </main>
 
     <script src="./assets/script.js"></script>
+=======
+    </div>
+    </div>
+  
+    </main>
+    <script async defer
+    src ='https://maps.googleapis.com/maps/api/js?&key=AIzaSyCNvoG9mf_ZuEflZNJ02w5dYJWmX03DlG8'
+  ></script>
+  <!-- <script type="module" src="./assets/script.js"></script> -->
+  
+  
+>>>>>>> ede130c58ff4c40f06961a953ae0a517dee1c4d1
 </body>
 
 </html>
