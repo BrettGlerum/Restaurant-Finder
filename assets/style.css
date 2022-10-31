@@ -4,3 +4,22 @@
     width: 100%;
     /* The width is the width of the web page */
   }
+  #container {
+    height: 100%;
+    display: flex;
+  }
+  
+  #sidebar {
+    flex-basis: 15rem;
+    flex-grow: 1;
+    padding: 1rem;
+    max-width: 30rem;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  #map2{
+    width: 50%;
+    height: 400px;
+  }

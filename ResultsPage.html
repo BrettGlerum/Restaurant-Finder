@@ -15,6 +15,8 @@
     <main>
     <div id="map">
         *Map goes here*
+  
+
     </div>
     <div>
         <!-- Need to add link to google maps in href -->
@@ -26,9 +28,12 @@
     <div class="results">
         <h2>Your Restaurant Results: </h2>
         <ol class="results-list">
-            <li class="result-item"> *Restaurant 1*</li>
+            <li class="result-item"> *Restaurant 1*</li> 
+            <button class="result-loc"> </button>
             <li class="result-item"> *Restaurant 2* </li>
+            <button class="result-loc"> </button>
             <li class="result-item"> *Restaurant 3*</li>
+            <button class="result-loc"> </button>
         </ol>
     </div>
     <!-- Buttons to save results and go back to home -->
@@ -36,6 +41,18 @@
         <button id="btn save-results-btn">Save Results</button>
         <button id="btn go-back-btn">Go Back</button>
     </div>
+    <div id="container">
+        <div id="map2">
+            *Map goes here*
+      
+    
+        </div>
+        <div id="sidebar">
+          <p>Total Distance: <span id="total"></span></p>
+          <div id="panel"></div>
+        </div>
+      </div>
+
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNvoG9mf_ZuEflZNJ02w5dYJWmX03DlG8&libraries=places&callback=initMap&v=weekly"
     defer
