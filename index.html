@@ -26,7 +26,7 @@
         <!-- Clicking on this will show list of saved restaurants -->
         
         <div>
-            <p class="bg-slate-500 rounded-md p-7 m-3 text-4xl font-medium text-black text-center" id="saved-restaurants">Saved Restaurants</p>
+            <p class="bg-slate-500 rounded-md p-7 m-3 text-4xl font-medium text-black text-center" id="saved-restaurants">Search Restaurants</p>
         </div>
 
         <!-- User input for location -->
@@ -55,6 +55,14 @@
             <div class="distance-container">            
                 2 mi<input id="distance-slider" type="range" min="2" max="24" value="2" step="2" onchange="showDistance(this.value)">24 mi
             </div>
+        </div>
+        <div class="text-2xl">
+            <div class="user-input-container center">
+                <div class="p-7 m-3 bg-slate-500 text-center rounded-md">
+                    <h2 class="text-4xl font-medium">Enter Keyword:</h2>
+                        <div class="location-container p-4">
+                        <input class="rounded-md text-center hover:shadow-lg" id="Keyword" type="textbox" placeholder="Enter a keyword">
+                </div>
         </div>
 
         <!-- Buttons to choose top 3 or random 3 -->
