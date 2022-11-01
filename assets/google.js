@@ -84,6 +84,9 @@ function callback(results, status)  {
   };
 
   function initMap2() {
+    var tester = document.getElementById("panel").children[1]
+    if(typeof tester !== "undefined"){
+      tester.remove()}
     var Results = JSON.parse(localStorage.getItem("results"));
    const map= new google.maps.Map(
         document.getElementById('map'), {center: locations, zoom: 15});
@@ -95,6 +98,7 @@ function callback(results, status)  {
     });
   
     directionsRenderer.addListener("directions_changed", () => {
+      
       const directions = directionsRenderer.getDirections();
   
       if (directions) {
