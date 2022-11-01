@@ -138,7 +138,7 @@ function callback(results, status)  {
     }
   
 
-    document.getElementById("total").innerHTML = total + "Miles";
+    document.getElementById("total").innerHTML = total.toFixed(2) + "Miles";
   };
  var Search = document.querySelector(".results-list");
 
