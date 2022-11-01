@@ -102,7 +102,7 @@ function callback(results, status)  {
     });
     displayRoute(
       locations,
-      Results[0].geometry.location,
+      endLocat,
       directionsService,
       directionsRenderer
     );
@@ -143,10 +143,12 @@ function callback(results, status)  {
 
   Search.addEventListener("click", function(event){
     var element = event.target;
+    var endLocat = element.innerHTML;
     if(element.matches("button") === true){
         initMap2();
     }
   });
+
   window.initMap = initMap;
 
   
