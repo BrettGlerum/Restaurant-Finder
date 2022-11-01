@@ -5,46 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Finder Results</title>
+    <title>Results Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type= "module" src="./assets/google.js"></script>
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
-    <!-- Map -->
-    <main>
-    <div id="map">
-        *Map goes here*
-  
 
-    </div>
-    <div>
-        <!-- Need to add link to google maps in href -->
-        <button id="btn get-directions-btn"> <a href="*whatever link to google maps*">Get Directions</a></button>
-    </div>
+<body class="mx-w-md mx-auto">
 
-    <!-- List of results for top 3 or random generated -->
-    <!-- Clicking on each list item should change the map to that restaurant -->
-    <div class="results">
-        <h2>Your Restaurant Results: </h2>
-        <ol class="results-list">
-            <li class="result-item"> *Restaurant 1*</li> 
-            <button class="result-loc"> </button>
-            <li class="result-item"> *Restaurant 2* </li>
-            <button class="result-loc"> </button>
-            <li class="result-item"> *Restaurant 3*</li>
-            <button class="result-loc"> </button>
-        </ol>
-    </div>
-    <!-- Buttons to save results and go back to home -->
-    <div class="go-back">
-        <button id="save-results-btn">Save Results</button>
-        <button id="go-back-btn" onclick="history.back()">Go Back</button>
-    </div>
-    <div id="container">
-        <div id="map2">
+    <header>
+        <h1 class="text-7xl font-bold text-center p-10 text-white bg-red-900">Restaurant Finder 🍽️</h1>
+    </header>
+
+    <main class="px-8 grid justify-items-center bg-cover bg-left-bottom"
+    style="background-image: url('./image/restaurant-bg.jpg') ;">
+
+        <!-- Map -->
+        <div class="bg-slate-500 rounded-md p-7 m-3 text-4xl font-medium text-black text-center" id="map border">
             *Map goes here*
-      
+        </div>
+
+    <div class="text-2xl">
+
+        <div class="p-2 m-3 bg-slate-500 text-center rounded-md">
+            <!-- Need to add link to google maps in href -->
+                <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="btn get-directions-btn"> <a href="*whatever link to google maps*">Get Directions</a></button>
+        </div>
+
+        <!-- List of results for top 3 or random generated -->
+        <!-- Clicking on each list item should change the map to that restaurant -->
+        <div class="results p-7 m-3 bg-slate-500 text-center rounded-md">
+            <h2 class="text-4xl font-medium">Your Restaurant Results: </h2>
+            <ol class="results-list">
+                <li class="result-item p-2"> *Restaurant 1*</li>
+                <li class="result-item p-2"> *Restaurant 2* </li>
+                <li class="result-item p-2"> *Restaurant 3*</li>
+            </ol>
+        </div>
+
+        <!-- Buttons to save results and go back to home -->
+        <div class="go-back p-7 m-3 bg-slate-500 text-center rounded-md">
+            <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="save-results-btn">Save Results</button>
+            <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="go-back-btn" onclick="history.back()">Go Back</button>
+        </div>
+
+    </div>
+    <footer class="bg-red-900 text-white text-center p-2 m-2 rounded-lg w-full ...">
+        <p>Made by The Indecisives</p>
+    </footer>
+
+    </main>
     
         </div>
         <div id="sidebar">
