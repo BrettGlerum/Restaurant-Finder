@@ -134,11 +134,11 @@ function callback(results, status)  {
     }
   
     for (let i = 0; i < myroute.legs.length; i++) {
-      total += myroute.legs[i].distance.value;
+      total += myroute.legs[i].distance.value / 1609;
     }
   
 
-    document.getElementById("total").innerHTML = total;
+    document.getElementById("total").innerHTML = total + "Miles";
   };
  var Search = document.querySelector(".results-list");
 
