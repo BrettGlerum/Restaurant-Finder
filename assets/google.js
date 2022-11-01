@@ -36,6 +36,7 @@ if (document.title === 'Restaurant Finder') {
   var map;
   var service;
   var infowindow;
+  var endLocat = [];
   var cost = localStorage.getItem("cost");
 var distance =  1609 * localStorage.getItem("distance");
 var locations = JSON.parse(localStorage.getItem("search_location"))[0].geometry.location;
@@ -143,7 +144,7 @@ function callback(results, status)  {
 
   Search.addEventListener("click", function(event){
     var element = event.target;
-    var endLocat = element.innerHTML;
+    endLocat = element.innerHTML;
     if(element.matches("button") === true){
         initMap2();
     }
