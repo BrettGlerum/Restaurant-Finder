@@ -32,7 +32,7 @@ if (document.title === 'Restaurant Finder') {
   if (document.title === 'Restaurant Finder Results') {
   var Keyword = localStorage.getItem("keyword")
   var restultsEl = document.querySelectorAll(".result-item");
-  var restultsLocationEl = document.querySelectorAll(".result-loc")
+  var restultsLocationEl = document.querySelectorAll("#result-loc")
   var map;
   var service;
   var infowindow;
